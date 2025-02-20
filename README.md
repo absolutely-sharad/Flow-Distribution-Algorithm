@@ -20,46 +20,46 @@ The Flow Distribution Algorithm Backend is a Node.js-based backend system design
 
 ## Tech Stack
 
-Backend: Node.js, Express.js
+- Backend: Node.js, Express.js
 
-Database: MongoDB (Mongoose ORM)
+- Database: MongoDB (Mongoose ORM)
 
-Testing: Jest, Chai, Mocha
+- Testing: Jest, Chai, Mocha
 
-Middleware: JWT Authentication, CORS, Error Handling
+- Middleware: JWT Authentication, CORS, Error Handling
 
 ## Installation
 
 ### Prerequisites
 
-Install Node.js (>= 14.x)
+- Install Node.js (>= 14.x)
 
-Install MongoDB (or use MongoDB Atlas for cloud storage)
+- Install MongoDB (or use MongoDB Atlas for cloud storage)
 
-Install Postman for API testing (optional)
+- Install Postman for API testing (optional)
 
 ### Setup Instructions
 
-Clone the repository:
+1. Clone the repository:
 
 git clone https://github.com/your-repo-url.git
 cd flow-distribution-backend
 
-### Install dependencies:
+2. Install dependencies:
 
 npm install
 
-Create a .env file in the root directory and add the following:
+3. Create a .env file in the root directory and add the following:
 
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/flow-distribution
 JWT_SECRET=your_secret_key
 
-### Start the server:
+4. Start the server:
 
 npm start
 
-Run tests:
+5. Run tests:
 
 npm test
 
@@ -131,21 +131,21 @@ Response:
   "message": "Priority toggled successfully"
 }
 
-Algorithm Logic
+## Algorithm Logic
 
-User Allocation:
+### User Allocation:
 
 Distributes users equally among astrologers.
 
 Uses round-robin scheduling to prevent biases.
 
-Top Astrologer Adjustment:
+### Top Astrologer Adjustment:
 
 Allows increasing or decreasing flow dynamically.
 
 Uses a priority queue to manage preferred astrologers.
 
-Performance Optimizations:
+### Performance Optimizations:
 
 Uses caching (Redis) to minimize DB queries.
 
@@ -172,21 +172,21 @@ flow-distribution-backend/
 
 ## Future Improvements
 
-Implement WebSockets for real-time astrologer-user pairing.
+- Implement WebSockets for real-time astrologer-user pairing.
 
-Enhance machine learning-based flow optimization.
+- Enhance machine learning-based flow optimization.
 
-Improve rate limiting and API security.
+- Improve rate limiting and API security.
 
 ## Contributing
 
-Fork the repository.
+1. Fork the repository.
 
-Create a new branch (feature-xyz).
+2. Create a new branch (feature-xyz).
 
-Commit your changes.
+3. Commit your changes.
 
-Push to your branch and create a Pull Request.
+4. Push to your branch and create a Pull Request.
 
 ## License
 
